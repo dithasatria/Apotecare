@@ -1,5 +1,6 @@
 package com.diggiestudio.apotecare;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,9 +13,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import com.diggiestudio.apotecare.utilities.PrefManager;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+
+    private PrefManager manager = new PrefManager();
+
+    LinearLayout menu1, menu2, menu3, menu4, menu5, menu6, menu7, menu8, menu9, menu10, menu11, menu12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +32,49 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        boolean login = manager.getBoolean(this, "isLoggedIn");
+        if(!login){
+            Login();
+        }
+
+        menu1 = findViewById(R.id.linearMenu1);
+        menu2 = findViewById(R.id.linearMenu2);
+        menu3 = findViewById(R.id.linearMenu3);
+        menu4 = findViewById(R.id.linearMenu4);
+        menu5 = findViewById(R.id.linearMenu5);
+        menu6 = findViewById(R.id.linearMenu6);
+        menu7 = findViewById(R.id.linearMenu7);
+        menu8 = findViewById(R.id.linearMenu8);
+        menu9 = findViewById(R.id.linearMenu9);
+        menu10 = findViewById(R.id.linearMenu10);
+        menu11 = findViewById(R.id.linearMenu11);
+        menu12 = findViewById(R.id.linearMenu12);
+
+        menu1.setClickable(true);
+        menu2.setClickable(true);
+        menu3.setClickable(true);
+        menu4.setClickable(true);
+        menu5.setClickable(true);
+        menu6.setClickable(true);
+        menu7.setClickable(true);
+        menu8.setClickable(true);
+        menu9.setClickable(true);
+        menu10.setClickable(true);
+        menu11.setClickable(true);
+        menu12.setClickable(true);
+
+        menu1.setOnClickListener(this);
+        menu2.setOnClickListener(this);
+        menu3.setOnClickListener(this);
+        menu4.setOnClickListener(this);
+        menu5.setOnClickListener(this);
+        menu6.setOnClickListener(this);
+        menu7.setOnClickListener(this);
+        menu8.setOnClickListener(this);
+        menu9.setOnClickListener(this);
+        menu10.setOnClickListener(this);
+        menu11.setOnClickListener(this);
+        menu12.setOnClickListener(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -87,5 +131,54 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void Login(){
+        startActivity(new Intent(this, LoginActivity.class));
+        finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.linearMenu1:
+                startActivity(new Intent(this, CVDActivity.class));
+                break;
+            case R.id.linearMenu2:
+                startActivity(new Intent(this, BMIActivity.class));
+                break;
+            case R.id.linearMenu3:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu4:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu5:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu6:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu7:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu8:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu9:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu10:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu11:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.linearMenu12:
+                Toast.makeText(getApplicationContext(), "Coming Soon!", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
     }
 }

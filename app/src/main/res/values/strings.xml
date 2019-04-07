@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Apotecare</string>
+    <string name="app_name">Apoticare</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">ANNLUTHFIISA</string>
+    <string name="nav_header_subtitle">luthfiannisa@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Sign in</string>
@@ -19,4 +19,17 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="main_tab1">FAKTOR RESIKO CVD</string>
+    <string name="main_tab2">BODY MASS INDEX</string>
+    <string name="main_tab3">PROFIL LABORATORIUM</string>
+    <string name="main_tab4">WAKTU MINUM OBAT</string>
+    <string name="main_tab5">TEMUKAN KIMIA FARMA</string>
+    <string name="main_tab6">INFORMASI OBAT</string>
+    <string name="main_tab7">ARTIKEL KESEHATAN &amp; KECANTIKAN</string>
+    <string name="main_tab8">KONSULTASI APOTEKER</string>
+    <string name="main_tab9">SARAN VITAMIN</string>
+    <string name="main_tab10">TRANSAKSI PRODUK</string>
+    <string name="main_tab11">MEMBER ROYALTI</string>
+    <string name="main_tab12">TEMUKAN DOKTER</string>
 </resources>

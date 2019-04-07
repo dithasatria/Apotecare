@@ -21,20 +21,23 @@
             android:id="@+id/tvUmur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
             android:text="UMUR *" />
 
         <EditText
             android:id="@+id/etUmur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
             android:inputType="number" />
 
         <TextView
             android:id="@+id/tvTinggiBadan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
             android:inputType="number"
-            android:text="TINGGI BADAN DALAM METER *" />
+            android:text="TINGGI BADAN DALAM CM*" />
 
         <EditText
             android:id="@+id/etTinggiBadan"

@@ -6,7 +6,11 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -73,22 +77,46 @@ public class BMIActivity extends AppCompatActivity implements View.OnClickListen
         //beratBadan = Integer.parseInt(berat);
 
         btnBMISubmit.setOnClickListener(this);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        etBeratBadan.setOnEditorActionListener(new EditText.OnEditorActionListener(){
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    btnBMISubmit.performClick();
+                    return true;
+                }
+                return false;
+            }
+        });
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnBMISubmit:
+                hideKeybord();
                 calculateBMI();
                 break;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) // Press Back Icon
+        {
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void calculateBMI(){
         tinggi = etTinggiBadan.getText().toString();
         berat = etBeratBadan.getText().toString();
 
-        if(tinggi.equals("") && berat.equals(""))
+        if(tinggi.equals("") || berat.equals(""))
         {
             Toast.makeText(getApplicationContext(),"Isi semua form yang ada!", Toast.LENGTH_SHORT).show();
         }
@@ -146,6 +174,15 @@ public class BMIActivity extends AppCompatActivity implements View.OnClickListen
             //tvKeteranganSkorBMI.setText(keteranganBMI);
 
             Toast.makeText(getApplicationContext(),"hasil: " + hasil_akhir, Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void hideKeybord() {
+        try  {
+            InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        } catch (Exception e) {
+
         }
     }
 }
