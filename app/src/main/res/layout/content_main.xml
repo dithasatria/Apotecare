@@ -1,517 +1,517 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:weightSum="10"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:weightSum="10"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context=".MainActivity"
+tools:showIn="@layout/app_bar_main">
+
+<android.support.v7.widget.GridLayout
+    app:columnCount="3"
+    app:rowCount="3"
+    app:alignmentMode="alignMargins"
+    app:columnOrderPreserved="false"
+    android:layout_weight="10"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    android:padding="18dp"
+    android:layout_height="0dp">
 
-    <android.support.v7.widget.GridLayout
-        app:columnCount="3"
-        app:rowCount="3"
-        app:alignmentMode="alignMargins"
-        app:columnOrderPreserved="false"
-        android:layout_weight="10"
-        android:layout_width="match_parent"
-        android:padding="18dp"
-        android:layout_height="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu1"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu1"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu1"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"/>
 
-                <ImageView
-                    android:src="@drawable/menu1"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab1"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab1"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu2"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu2"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu2"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu2"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab2"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab2"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu3"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu3"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu3"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent">
-
-                <ImageView
-                    android:src="@drawable/menu3"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab3"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab3"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu4"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu4"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu4"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent">
-
-                <ImageView
-                    android:src="@drawable/menu4"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab4"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab4"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu5"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu5"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu5"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent">
-
-                <ImageView
-                    android:src="@drawable/menu5"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab5"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab5"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu6"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu6"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu6"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent">
-
-                <ImageView
-                    android:src="@drawable/menu6"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab6"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab6"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu7"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu7"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu7"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu7"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab7"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab7"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu8"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu8"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu8"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu8"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab8"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab8"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu9"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu9"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu9"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu9"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab9"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab9"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu10"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu10"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu10"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu10"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab10"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab10"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu11"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu11"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu11"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu11"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab11"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab11"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <LinearLayout
+            android:id="@+id/linearMenu12"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linearMenu12"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="@drawable/circle_shape"
+            <ImageView
+                android:src="@drawable/menu12"
+                android:tint="@color/colorIconMain"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/menu12"
-                    android:tint="@color/colorIconMain"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="@dimen/marginMainMenuText"
-                android:text="@string/main_tab12"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textsizemainbtn"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
 
-    </android.support.v7.widget.GridLayout>
+        <TextView
+            android:layout_marginTop="@dimen/marginMainMenuText"
+            android:text="@string/main_tab12"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsizemainbtn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v7.widget.GridLayout>
 
 </LinearLayout>

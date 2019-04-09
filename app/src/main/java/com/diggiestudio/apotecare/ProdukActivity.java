@@ -3,7 +3,10 @@ package com.diggiestudio.apotecare;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.GridLayout;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,8 +18,10 @@ public class ProdukActivity extends AppCompatActivity {
     private PrefManager manager = new PrefManager();
 
     TextView tvProdukName1, tvProdukName2, tvProdukName3, tvProdukName4;
-    TextView tvProdukPrice1, tvProdukPrice2, tvProdukPrice3, tvProdukPrice4;
+    //TextView tvProdukPrice1, tvProdukPrice2, tvProdukPrice3, tvProdukPrice4;
     ImageView imgProduk1, imgProduk2, imgProduk3, imgProduk4;
+
+    GridLayout mainGrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +33,21 @@ public class ProdukActivity extends AppCompatActivity {
         tvProdukName3 = findViewById(R.id.tvProdukName3);
         tvProdukName4 = findViewById(R.id.tvProdukName4);
 
+        /*
         tvProdukPrice1 = findViewById(R.id.tvProdukPrice);
         tvProdukPrice2 = findViewById(R.id.tvProdukPrice2);
         tvProdukPrice3 = findViewById(R.id.tvProdukPrice3);
         tvProdukPrice4 = findViewById(R.id.tvProdukPrice4);
+        */
 
         imgProduk1 = findViewById(R.id.imgProduk);
         imgProduk2 = findViewById(R.id.imgProduk2);
         imgProduk3 = findViewById(R.id.imgProduk3);
         imgProduk4 = findViewById(R.id.imgProduk4);
+
+        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
+
+        //Set Event
 
         boolean login = manager.getBoolean(this, "isLoggedIn");
         if(!login){
@@ -70,10 +81,12 @@ public class ProdukActivity extends AppCompatActivity {
         tvProdukName3.setText(produkName);
         tvProdukName4.setText(produkName);
 
+        /*
         tvProdukPrice1.setText(produkPrice);
         tvProdukPrice2.setText(produkPrice);
         tvProdukPrice3.setText(produkPrice);
         tvProdukPrice4.setText(produkPrice);
+        */
 
         if(produkImg.equals("BMI_bbnaik")) {
             imgProduk1.setImageResource(R.drawable.suplemen_gain_fast);
@@ -92,6 +105,26 @@ public class ProdukActivity extends AppCompatActivity {
             imgProduk2.setImageResource(R.drawable.cvd_produk);
             imgProduk3.setImageResource(R.drawable.cvd_produk);
             imgProduk4.setImageResource(R.drawable.cvd_produk);
+        }
+
+        setSingleEvent(mainGrid, produkImg);
+    }
+
+    private void setSingleEvent(GridLayout mainGrid, final String produk) {
+        //Loop all child item of Main Grid
+        for (int i = 0; i < mainGrid.getChildCount(); i++) {
+            //You can see , all child item is CardView , so we just cast object to CardView
+            CardView cardView = (CardView) mainGrid.getChildAt(i);
+            final int finalI = i;
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(getApplicationContext(), ProdukDetailActivity.class);
+                    intent.putExtra("ProdukDetail", produk);
+                    startActivity(intent);
+                }
+            });
         }
     }
 
