@@ -7,9 +7,10 @@
     <color name="colorText">#AEB0B2</color>
     <color name="colorCVDGreen">#A5C834</color>
     <color name="colorCVDYellow">#FBEF02</color>
-    <color name="colorCVDOrange">#F4811F</color>
-    <color name="colorCVDRed">#EB0F1C</color>
-    <color name="colorCVDDarkRed">#3C3F41</color>
+    <color name="colorCVDOrange">#F2950D</color>
+    <color name="colorCVDRed">#FD0001</color>
+    <color name="colorCVDDarkRed">#BF0001</color>
     <color name="colorBlack">#000</color>
     <color name="colorTransparent">#80000000</color>
+    <color name="colorIconMain">#BE0001</color>
 </resources>

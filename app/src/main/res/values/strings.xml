@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Apoticare</string>
+    <string name="app_name">Apoti-care</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">ANNLUTHFIISA</string>
@@ -32,4 +32,5 @@
     <string name="main_tab10">TRANSAKSI PRODUK</string>
     <string name="main_tab11">MEMBER ROYALTI</string>
     <string name="main_tab12">TEMUKAN DOKTER</string>
+    <string name="txtProdukDescription"><![CDATA[Manfaat : \nMenurunkan hipertensi, hiperkolesterolemia, trigliserida, LDL dan meningkatkan HDL. \nMembantu menghambat penggumpalan darah abnormal. \nMenjaga kesehatan jantung & melancarkan sirkulasi darah keseluruh tubuh.]]></string>
 </resources>

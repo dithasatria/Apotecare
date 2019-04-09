@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProdukDetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relProdukHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDetailProduk"
+                android:src="@drawable/cvd_produk"
+                android:layout_width="160dp"
+                android:layout_height="160dp" />
+
+            <TextView
+                android:id="@+id/tvDetailProdukName"
+                android:text="N.PLUS GARLIC @100"
+                app:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="16sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:layout_toRightOf="@+id/imgDetailProduk"
+                android:layout_toEndOf="@+id/imgDetailProduk"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvProdukDetailPrice"
+                android:text="Rp. 250.000"
+                android:layout_marginLeft="10dp"
+                android:autoSizeMinTextSize="16sp"
+                android:autoSizeMaxTextSize="22sp"
+                android:layout_below="@+id/tvDetailProdukName"
+                android:layout_toRightOf="@+id/imgDetailProduk"
+                android:layout_toEndOf="@+id/imgDetailProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnProdukDetailBuy"
+                android:text="BELI"
+                android:layout_below="@+id/tvProdukDetailPrice"
+                android:layout_toRightOf="@+id/imgDetailProduk"
+                android:layout_toEndOf="@+id/imgDetailProduk"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/produkDescription"
+            android:text="@string/txtProdukDescription"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

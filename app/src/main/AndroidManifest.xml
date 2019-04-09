@@ -8,34 +8,45 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_apoticare"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_apoticare_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
+        <activity android:name=".ProdukDetailActivity"
+            android:label="Detail Produk" />
+        <activity
+            android:name=".CVDRekomendasiActivity"
+            android:label="CVD" />
+        <activity
+            android:name=".BMIAfterHasilActivity"
+            android:label="BMI" />
+        <activity
+            android:name=".BMIHasilActivity"
+            android:label="Hasil BMI" />
+        <activity
+            android:name=".BMIOlahragaActivity"
+            android:label="Jenis Olahraga" />
+        <activity
+            android:name=".ProdukActivity"
+            android:label="Produk" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CVDHasilActivity"
-            android:label="Hasil CVD"></activity>
-
+            android:label="Hasil CVD" />
         <activity
             android:name=".CVDActivity"
-            android:label="CVD">
-        </activity>
-
+            android:label="CVD"></activity>
         <activity
             android:name=".BMIActivity"
             android:label="BMI">
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -10,11 +10,11 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <GridLayout
-        android:columnCount="3"
-        android:rowCount="3"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
+    <android.support.v7.widget.GridLayout
+        app:columnCount="3"
+        app:rowCount="3"
+        app:alignmentMode="alignMargins"
+        app:columnOrderPreserved="false"
         android:layout_weight="10"
         android:layout_width="match_parent"
         android:padding="18dp"
@@ -24,8 +24,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -41,11 +41,12 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu1"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
 
@@ -64,8 +65,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -81,11 +82,12 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu2"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -104,8 +106,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -118,14 +120,15 @@
                 android:clickable="true"
                 android:background="@drawable/circle_shape"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="fill_parent">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu3"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -144,8 +147,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -158,14 +161,15 @@
                 android:clickable="true"
                 android:background="@drawable/circle_shape"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="fill_parent">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu4"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -184,8 +188,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -198,14 +202,15 @@
                 android:clickable="true"
                 android:background="@drawable/circle_shape"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="fill_parent">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu5"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -224,8 +229,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -238,14 +243,15 @@
                 android:clickable="true"
                 android:background="@drawable/circle_shape"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="fill_parent">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu6"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -264,8 +270,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -281,7 +287,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu7"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
@@ -304,8 +311,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -321,7 +328,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu8"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
@@ -344,8 +352,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -361,7 +369,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu9"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
@@ -384,8 +393,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -401,7 +410,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu10"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
@@ -424,8 +434,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -441,7 +451,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu11"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
@@ -464,8 +475,8 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
@@ -481,7 +492,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/kimia_farma_logo"
+                    android:src="@drawable/menu12"
+                    android:tint="@color/colorIconMain"
                     android:layout_gravity="center_horizontal"
                     android:padding="15dp"
                     android:layout_width="wrap_content"
@@ -500,6 +512,6 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-    </GridLayout>
+    </android.support.v7.widget.GridLayout>
 
 </LinearLayout>

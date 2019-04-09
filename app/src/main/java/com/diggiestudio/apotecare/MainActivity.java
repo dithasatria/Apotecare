@@ -124,9 +124,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        //if (id == R.id.nav_tools) {
-            // Handle the camera action
-        //}
+        if (id == R.id.nav_tools) {
+            manager.saveBoolean(getApplicationContext(), "isLoggedIn", false);
+            startActivity(new Intent(this, LoginActivity.class));
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

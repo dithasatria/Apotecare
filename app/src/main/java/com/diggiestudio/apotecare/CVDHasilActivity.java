@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class CVDHasilActivity extends AppCompatActivity {
+public class CVDHasilActivity extends AppCompatActivity implements View.OnClickListener {
 
     int hasilCVD;
 
@@ -27,12 +27,16 @@ public class CVDHasilActivity extends AppCompatActivity {
         Intent i = getIntent();
         hasilCVD = i.getIntExtra("HasilCVD", 0);
 
+        if(hasilCVD == 0)
+            finish();
+
         tvHasil = findViewById(R.id.hasilCVD);
         tvCVDDeskripsi = findViewById(R.id.tvCVDDeskripsi);
         linearHasilWarna = findViewById(R.id.linearWarnaCVD);
         linearTurunkanResiko = findViewById(R.id.linearTurunkanResiko);
         btnNextCVD = findViewById(R.id.btnNextCVD);
 
+        btnNextCVD.setOnClickListener(this);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -94,5 +98,15 @@ public class CVDHasilActivity extends AppCompatActivity {
         //Intent i = new Intent(this, CVDHasilNextActivity.class);
         //i.putExtra("CVD", hasilCVD);
         //startActivity(i);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.btnNextCVD:
+                startActivity(new Intent(this, CVDRekomendasiActivity.class));
+                break;
+        }
     }
 }
