@@ -80,7 +80,6 @@ public class BMIActivity extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnBMISubmit:
-                hideKeybord();
                 calculateBMI();
                 break;
         }
@@ -135,12 +134,4 @@ public class BMIActivity extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-    public void hideKeybord() {
-        try  {
-            InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-        } catch (Exception e) {
-
-        }
-    }
 }

@@ -40,7 +40,7 @@
         app:rowCount="3"
         app:alignmentMode="alignMargins"
         app:columnOrderPreserved="false"
-        android:layout_weight="8"
+        android:layout_weight="9"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
@@ -73,7 +73,7 @@
                 <TextView
                     android:id="@+id/tvProdukName"
                     app:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMinTextSize="8sp"
                     android:autoSizeMaxTextSize="30sp"
                     android:layout_gravity="center"
                     android:text="SUSU PROTEIN UNIVERSAL GAINFAST  1000G"
@@ -119,7 +119,7 @@
                 <TextView
                     android:id="@+id/tvProdukName2"
                     app:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMinTextSize="8sp"
                     android:autoSizeMaxTextSize="30sp"
                     android:layout_gravity="center"
                     android:text="SUSU PROTEIN UNIVERSAL GAINFAST  1000G"
@@ -168,7 +168,7 @@
                     android:layout_gravity="center"
                     android:text="SUSU PROTEIN UNIVERSAL GAINFAST  1000G"
                     app:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMinTextSize="8sp"
                     android:autoSizeMaxTextSize="30sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -214,7 +214,7 @@
                     android:layout_gravity="center"
                     android:text="SUSU PROTEIN UNIVERSAL GAINFAST  1000G"
                     app:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMinTextSize="8sp"
                     android:autoSizeMaxTextSize="30sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />

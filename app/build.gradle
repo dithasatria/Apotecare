@@ -4,9 +4,9 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.diggiestudio.apotecare"
-        minSdkVersion 16
+        minSdkVersion 18
         targetSdkVersion 28
-        versionCode 1
+        versionCode 4
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
