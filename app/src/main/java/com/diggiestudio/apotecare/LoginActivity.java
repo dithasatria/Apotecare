@@ -70,7 +70,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String userID = etUserId.getText().toString();
             String password = etPassword.getText().toString();
 
-            if(userID.equals("userid") && password.equals("123456"))
+            if(userID.equals("3116AP0300001") && password.equals("01011992"))
+            {
+                Toast.makeText(getApplicationContext(), "Login Berhasil", Toast.LENGTH_LONG).show();
+                manager.saveBoolean(this, manager.KEY_IS_LOGIN, true);
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
+            }
+            else if(userID.equals("userid") && password.equals("123456"))
             {
                 Toast.makeText(getApplicationContext(), "Login Berhasil", Toast.LENGTH_LONG).show();
                 manager.saveBoolean(this, manager.KEY_IS_LOGIN, true);

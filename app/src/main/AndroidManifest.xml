@@ -14,39 +14,50 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ProdukDetailActivity"
-            android:label="Detail Produk" />
+            android:label="Detail Produk"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".CVDRekomendasiActivity"
-            android:label="CVD" />
+            android:label="CVD"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".BMIAfterHasilActivity"
-            android:label="BMI" />
+            android:label="BMI"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".BMIHasilActivity"
-            android:label="Hasil BMI" />
+            android:label="Hasil BMI"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".BMIOlahragaActivity"
-            android:label="Jenis Olahraga" />
+            android:label="Jenis Olahraga"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ProdukActivity"
-            android:label="Produk" />
+            android:label="Produk"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".CVDHasilActivity"
-            android:label="Hasil CVD" />
+            android:label="Hasil CVD"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".CVDActivity"
-            android:label="CVD"></activity>
+            android:label="CVD"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".BMIActivity"
-            android:label="BMI">
+            android:label="BMI"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
